@@ -269,9 +269,19 @@
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
+  width: auto;
+
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
 
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -356,9 +366,13 @@
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
 
   &__text {
     margin-bottom: 2rem;
+    z-index: 2;
+    position: relative;
   }
   &__user {
     display: flex;
@@ -389,5 +403,17 @@
     font-size: 2.5rem;
     color: var(--color-primary);
     font-weight: 100;
+  }
+
+  &::before {
+    content: "\201C";
+    font-size: 20rem;
+    position: absolute;
+    top: -2.8rem;
+    line-height: 1;
+    left: -1rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
   }
 }
