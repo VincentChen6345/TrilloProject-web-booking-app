@@ -52,7 +52,8 @@ body {
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .content {
   display: flex; }
@@ -91,7 +92,14 @@ body {
 
 .logo {
   height: 3.25rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.logo-text {
+  position: absolute;
+  font-size: 2rem;
+  left: 7rem;
+  color: var(--color-primary); }
 
 .search {
   flex: 0 0 40%;

@@ -3,6 +3,14 @@
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.logo-text {
+  position: absolute;
+  font-size: 2rem;
+  left: 7rem;
+  color: var(--color-primary);
 }
 
 /////////////////////////////
